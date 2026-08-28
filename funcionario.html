@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funcionario</title>
+    <link rel="stylesheet" href="funcionario.css">
 </head>
 <body>
+
     <h1>Bienvenido, Funcionario</h1>
-    <p>Esta es la página para el ingreso de los funcionarios del hospital porfavor ingrese sus datos.</p>
+    <p>Esta es la página para el ingreso de los funcionarios del hospital, por favor ingrese sus datos.</p>
+
     <main class="login-card">
         
-    <header class="login-header">
-        <img src="C:\Users\alejo\OneDrive\Desktop\Inicio De session\Gemini_Generated_Image_logo sin tantas cosas.png" alt="Hospital Gam2" class="login-logo" style="width: 120px; height: auto;">
-        <p>Login</p>
-        <h1>Iniciar Sesión</h1>
-    </header>
+        <header class="login-header">
+            <img src="Gemini_Generated_Image_logo sin tantas cosas.png" alt="Hospital Gam2" class="login-logo">
+            <p>Login</p>
+            <h1>Iniciar Sesión</h1>
+        </header>
 
-    <form action="login.php" method="post" class="login-form">
-        
-        <div class="input-group">
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" required>
-        </div>
+        <form action="login.php" method="post" class="login-form">
+            
+            <div class="input-group">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
 
-        <div class="input-group">
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
+            <div class="input-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
 
-        <div class="form-actions">
-            <input type="submit" value="Iniciar Sesión" class="btn-submit"> 
-            <a href="registro.html" class="link-register">Registrarse</a>
-        </div>
+            <div class="form-actions">
+                <input type="submit" value="Iniciar Sesión" class="btn-submit"> 
+                <a href="registro.html" class="link-register">Registrarse</a>
+            </div>
 
-    </form>
+        </form>
 
-</main>
+    </main>
+
 </body>
 </html>

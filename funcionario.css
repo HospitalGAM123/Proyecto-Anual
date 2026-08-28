@@ -16,7 +16,6 @@ body {
     padding: 20px;
 }
 
-/* Encabezado principal fuera de la tarjeta */
 body > h1 {
     color: #1a365d;
     margin-bottom: 8px;
@@ -32,7 +31,6 @@ body > p {
     font-size: 0.95rem;
 }
 
-/* Tarjeta principal del login */
 .login-card {
     background-color: #ffffff;
     padding: 35px 30px;
@@ -42,7 +40,6 @@ body > p {
     max-width: 400px;
 }
 
-/* Encabezado interno de la tarjeta */
 .login-header {
     text-align: center;
     margin-bottom: 25px;
@@ -69,7 +66,6 @@ body > p {
     color: #2d3748;
 }
 
-/* Campos de texto y etiquetas */
 .input-group {
     margin-bottom: 20px;
     display: flex;
@@ -98,7 +94,6 @@ body > p {
     box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
 }
 
-/* Botón de envío y enlace de registro */
 .form-actions {
     display: flex;
     flex-direction: column;
