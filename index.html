@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -44,6 +43,16 @@
             <p>Login</p>
             <h1>Iniciar Sesión</h1>
         </header>
+
+        <!-- Bloque para mostrar mensajes de error si se envían desde login.php -->
+        <?php if (isset($_GET['error'])): ?>
+            <div class="error-message" style="color: red; margin-bottom: 15px; text-align: center;">
+                <?php
+                    if ($_GET['error'] == 'vacios') echo "Por favor complete todos los campos.";
+                    if ($_GET['error'] == 'incorrecto') echo "Usuario o contraseña incorrectos.";
+                ?>
+            </div>
+        <?php endif; ?>
 
         <form action="login.php" method="post" class="login-form">
             
