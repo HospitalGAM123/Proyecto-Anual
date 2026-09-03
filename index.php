@@ -1,0 +1,80 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al Hospital Gam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 class="welcome-title">Bienvenido al Hospital Gam</h1>
+    
+    <div class="main-container">
+        
+        <div class="image-container">
+            <img src="hospital paysandu.jpg" alt="Hospital Paysandú" class="hospital-image">
+        </div>
+
+        <div class="info-panels">
+            
+            <section class="info-card">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos una institución comprometida con la salud y el bienestar de nuestra comunidad, ofreciendo atención médica de alta calidad con calidez humana y tecnología de vanguardia.</p>
+            </section>
+
+            <section class="info-card">
+                <h3>Servicios Clínicos</h3>
+                <p>Contamos con una amplia variedad de especialidades médicas, urgencias 24 horas, internación, laboratorios de análisis clínicos, diagnóstico por imagen y consultas externas.</p>
+            </section>
+
+            <section class="info-card">
+                <h3>Seguro Médico</h3>
+                <p>Trabajamos en conjunto con las principales coberturas del país y planes propios adaptados para brindarte a vos y a tu familia la máxima tranquilidad cuando más lo necesitan.</p>
+            </section>
+
+        </div>
+
+    </div>
+
+    <main class="login-card">
+        
+        <header class="login-header">
+            <img src="Gemini_Generated_Image_logo sin tantas cosas.png" alt="Hospital Gam2" class="login-logo">
+            <p>Login</p>
+            <h1>Iniciar Sesión</h1>
+        </header>
+
+        <!-- Bloque para mostrar mensajes de error si se envían desde login.php -->
+        <?php if (isset($_GET['error'])): ?>
+            <div class="error-message" style="color: red; margin-bottom: 15px; text-align: center;">
+                <?php
+                    if ($_GET['error'] == 'vacios') echo "Por favor complete todos los campos.";
+                    if ($_GET['error'] == 'incorrecto') echo "Usuario o contraseña incorrectos.";
+                ?>
+            </div>
+        <?php endif; ?>
+
+        <form action="login.php" method="post" class="login-form">
+            
+            <div class="input-group">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-actions">
+                <input type="submit" value="Iniciar Sesión" class="btn-submit"> 
+                <a href="registro.html" class="link-register">Registrarse</a>
+            </div>
+
+        </form>
+
+    </main>
+    <nav></nav>
+
+</body>
+</html>
