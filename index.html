@@ -66,25 +66,5 @@
 
     </main>
 
-    <!-- Apartado de navegación rápida al final -->
-    <div style="text-align: center; margin: 30px 0;">
-        <hr>
-        <h3>Navegar a otra página</h3>
-        <select id="paginas">
-            <option value="coso.html">Ambulancias (coso.html)</option>
-            <option value="registro.html">Registro (registro.html)</option>
-        </select>
-        <button onclick="irAPagina()">Ir</button>
-    </div>
-
-    <script>
-        function irAPagina() {
-            var pagina = document.getElementById('paginas').value;
-            if (pagina !== '') {
-                window.location.href = pagina;
-            }
-        }
-    </script>
-
 </body>
 </html>
