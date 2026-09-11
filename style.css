@@ -33,5 +33,10 @@ input, textarea {
 .campo {
     border: 1px solid rgb(205, 243, 255);
     padding: 10px;
+
+    .campo {
+    border: 1px solid rgb(205, 243, 255);
+    padding: 10px;
+    
     
 }
